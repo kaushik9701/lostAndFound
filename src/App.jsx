@@ -5,7 +5,7 @@ import Profie from './pages/profile/profie';
 import Items from './pages/items/items';
 import MyState from './context/data/myState';
 import Signup from './pages/registration/signUp';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import Login from './pages/registration/login';
 import ChatPage from './pages/messaging/messaging';
 import { ChatContextProvider } from './context/data/chatContext';
