@@ -1,9 +1,5 @@
 import React from 'react'
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-} from "react-router-dom";
+import {BrowserRouter,Route,Routes} from "react-router-dom";
 import HomePage from './pages/homePage/homePage';
 import Profie from './pages/profile/profie';
 import Items from './pages/items/items';
@@ -19,7 +15,7 @@ function App() {
   return (
     <MyState>
       <ChatContextProvider>
-      <Router>
+      <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage/>} />
         <Route path="/items" element={<Items/>} />
@@ -29,7 +25,7 @@ function App() {
         <Route path="/chat" element={<ProtectedRoutes><ChatPage/></ProtectedRoutes>} />
       </Routes>
       <ToastContainer />
-    </Router>
+    </BrowserRouter>
     </ChatContextProvider>
     </MyState>
     
